@@ -15,6 +15,10 @@
 
 # NEW
 
+pushd package/lean
+git clone --depth=1 https://github.com/fw876/helloworld
+popd
+
 # Clone community packages to package/community
 mkdir package/community
 pushd package/community
@@ -75,7 +79,7 @@ svn co https://github.com/immortalwrt/immortalwrt/trunk/package/ntlf9t/luci-app-
 git clone --depth=1 https://github.com/project-openwrt/openwrt-tmate
 
 # Add subconverter
-git clone --depth=1 https://github.com/tindy2013/openwrt-subconverter
+#git clone --depth=1 https://github.com/tindy2013/openwrt-subconverter
 
 # Add gotop
 svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/gotop
@@ -88,10 +92,10 @@ svn co https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t/luci-app-
 git clone --depth=1 https://github.com/zcy85611/openwrt-luci-kcp-udp
 
 # Add OpenAppFilter
-git clone --depth=1 https://github.com/destan19/OpenAppFilter
+#git clone --depth=1 https://github.com/destan19/OpenAppFilter
 
 # Add luci-app-oled (R2S Only)
-git clone --depth=1 https://github.com/NateLol/luci-app-oled
+#git clone --depth=1 https://github.com/NateLol/luci-app-oled
 
 # Add driver for rtl8821cu & rtl8812au-ac
 svn co https://github.com/project-openwrt/openwrt/branches/master/package/ctcgfw/rtl8812au-ac
